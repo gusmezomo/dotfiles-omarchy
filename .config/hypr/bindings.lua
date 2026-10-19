@@ -51,3 +51,10 @@ o.bind("SUPER + V", "Clipboard manager", "omarchy-shell shell toggle omarchy.cli
 -- desativando toogle workspace layout, muda do normal para scrolling
 -- alem de eu nao usar ta com bug que crash se muda sem querer
 hl.unbind("SUPER + L")
+-- strata-installer: file-manager start
+hl.unbind("SUPER + SHIFT + F")
+hl.unbind("SUPER + ALT + SHIFT + F")
+o.bind("SUPER + SHIFT + F", "File manager", { launch = "/home/gusmezomo/.local/bin/strata" })
+o.bind("SUPER + ALT + SHIFT + F", "File manager (cwd)",
+  "uwsm-app -- /home/gusmezomo/.local/bin/strata \"$(omarchy-cmd-terminal-cwd)\"")
+-- strata-installer: file-manager end
