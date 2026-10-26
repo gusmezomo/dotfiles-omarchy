@@ -51,6 +51,7 @@ o.bind("SUPER + V", "Clipboard manager", "omarchy-shell shell toggle omarchy.cli
 -- desativando toogle workspace layout, muda do normal para scrolling
 -- alem de eu nao usar ta com bug que crash se muda sem querer
 hl.unbind("SUPER + L")
+o.bind("SUPER + L", "Lock screen", "omarchy-system-lock")
 -- strata-installer: file-manager start
 hl.unbind("SUPER + SHIFT + F")
 hl.unbind("SUPER + ALT + SHIFT + F")
